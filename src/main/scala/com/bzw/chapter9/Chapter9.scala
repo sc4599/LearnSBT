@@ -34,6 +34,7 @@ object Chapter9 extends App{
   //*************9.4 从URL或其他源读取
   //Source对象有读取非文件源的方法:
   val source1 = Source.fromURL("http://www.bzw.cn/","UTF-8")//从 URL 读取
+  println(source1.getLines().mkString(" \n"))
   val source2 = Source.fromString("hello world")//从给定的字符串读取
   val source3 =Source.stdin //从标准输入读取
 
